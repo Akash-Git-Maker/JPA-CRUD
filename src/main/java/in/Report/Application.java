@@ -58,13 +58,13 @@ public class Application {
 //		}
 //-----------------------------------------------------------------------------------------------
 
-//		List<Student> all = repo.findAll();
+//		List<Student> Stud = repo.findAll();
 //		all.forEach(System.out::println);
 //-----------------------------------------------------------------------------------------------
 
 //		Sort ascending = Sort.by("studentName").ascending();
-//		List<Student> all = repo.findAll(ascending);
-//		all.forEach(System.out::println);
+//		List<Student> Stud = repo.findAll(ascending);
+//		Stud.forEach(System.out::println);
 //-----------------------------------------------------------------------------------------------
 
 		//PAGINATION
@@ -75,8 +75,8 @@ public class Application {
 		PageRequest page= PageRequest.of(1 - 1, 3);
 
 		Page<Student> findALl = repo.findAll(page);
-		List<Student> all = findALl.getContent();
-		all.forEach(System.out::println);
+		List<Student> Stud = findALl.getContent();
+		Stud.forEach(System.out::println);
 
 
 	}
